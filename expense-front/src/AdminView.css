@@ -1,0 +1,271 @@
+/* Admin Panel Container */
+.admin-container {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Menu Button */
+.menu-button {
+  display: block;
+  width: 100%;
+  background: none;
+  color: white;
+  border: none;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.menu-button:hover {
+  background: #34495e;
+}
+
+/* Submenu (Dropdown Items) */
+.sub-menu {
+  padding-left: 20px;
+}
+
+.sub-button {
+  display: block;
+  width: 100%;
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sub-button:hover {
+  background: #1abc9c;
+}
+
+/* Logout Button */
+.logout {
+  margin-top: auto;
+  background: #e74c3c;
+  color: white;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: white;
+}
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 20px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #e63946;
+}
+
+/* Menu Buttons */
+.menu-button {
+  background-color: #457b9d;
+  color: #f1faee;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #1d3557;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* Sub-menu */
+.sub-menu {
+  margin-left: 15px;
+  background-color: #a8dadc;
+  border-left: 3px solid #e63946;
+  padding: 5px 10px;
+  border-radius: 4px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sub-button {
+  background-color: transparent;
+  color: #1d3557;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sub-button:hover {
+  background-color: #f1faee;
+  border-radius: 4px;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: -30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main-content h1 {
+  color: #0e163c;
+  font-size: 45px;
+  font-weight: 300;
+  text-shadow: 5px 5px 10px rgba(0, 155, 173, 0.8), 
+  0 0 20px #000000, 
+  0 0 40px #96a4e3;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 2px; /* Thoda space taaki heavy lage */
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.main-content p {
+  color: #7a99b7;
+  font-size: 30px;
+}
+
+/* Logout Button */
+.logout {
+  background-color: #e63946 !important;
+  color: #fff !important;
+}
+
+.logout:hover {
+  background-color: #d62828 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-5px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #befffd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #e9ecef);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+}
+
+.dashboard-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.dashboard-text h1 {
+  font-size: 28px;
+  color: #457b9d;
+  margin-bottom: 10px;
+}
+
+.dashboard-text p {
+  font-size: 16px;
+  color: #1d3557;
+  line-height: 1.5;
+}
+
+.dashboard-image {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .dashboard-text {
+      padding-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .dashboard-image {
+      width: 200px;
+  }
+}

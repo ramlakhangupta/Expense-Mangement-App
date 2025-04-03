@@ -1,0 +1,11 @@
+AdminCategoryList
+
+const removeCategory=(id)=>{
+        deleteCategoryById(id).then( res => {
+            let remainCategory=categories.filter((category) => (category.categoryId !== id));
+         setCategories(remainCategory);
+       });
+      navigate('/admin-category-list');
+    }
+
+
